@@ -1,20 +1,20 @@
-import model.hogwarts;
-import model.grifindor;
-import model.pyfendye;
-import model.slizerin;
-import model.kogtevran;
+import model.Hogwarts;
+import model.Grifindor;
+import model.Pyfendye;
+import model.Slizerin;
+import model.Kogtevran;
 public class Main {
     public static void main(String[] args) {
-grifindor harryPoter= new grifindor("Гари Потер",1,1,1,1,1);
-grifindor germionaGrendger= new grifindor("Гермиона Грэнджэр",5,5,5,5,5);
-pyfendye sedrikDigori= new pyfendye("Седрик Диггори",2,2,2,2,2);
-pyfendye zahariaSmit= new pyfendye("Захария Смит",6,6,6,6,6);
-slizerin drakoMalfoy= new slizerin("Драко Малфой",3,3,3,3,3,3,3);
-slizerin gregoriGoil=new slizerin("Грэгори Гоил",7,7,7,7,7,7,7);
-kogtevran choChang= new kogtevran("Чжоу Чан",4,4,4,4,4,4);
-kogtevran MarcusBelbi=new kogtevran("Маркус Бэлби",8,8,8,8,8,8);
-hogwarts leha= new hogwarts("леха",99,99);
-hogwarts sania= new hogwarts("саня",98,98);
+Grifindor harryPoter= new Grifindor("Гари Потер",1,1,1,1,1);
+Grifindor germionaGrendger= new Grifindor("Гермиона Грэнджэр",5,5,5,5,5);
+Pyfendye sedrikDigori= new Pyfendye("Седрик Диггори",2,2,2,2,2);
+Pyfendye zahariaSmit= new Pyfendye("Захария Смит",6,6,6,6,6);
+Slizerin drakoMalfoy= new Slizerin("Драко Малфой",3,3,3,3,3,3,3);
+Slizerin gregoriGoil=new Slizerin("Грэгори Гоил",7,7,7,7,7,7,7);
+Kogtevran choChang= new Kogtevran("Чжоу Чан",4,4,4,4,4,4);
+Kogtevran MarcusBelbi=new Kogtevran("Маркус Бэлби",8,8,8,8,8,8);
+Hogwarts leha= new Hogwarts("леха",99,99);
+Hogwarts sania= new Hogwarts("саня",98,98);
         System.out.println(harryPoter);
         System.out.println(sedrikDigori);
         System.out.println(drakoMalfoy);

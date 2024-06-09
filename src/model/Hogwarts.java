@@ -1,14 +1,14 @@
 package model;
 
-public class hogwarts {
+public class Hogwarts {
    private String name;
     private int witchcraft;
     private int transgress;
 
-    public hogwarts(String name,int Witchcraft,int Transgress) {
+    public Hogwarts(String name, int witchcraft, int transgress) {
         this.name = name;
-        this.witchcraft=Witchcraft;
-        this.transgress=Transgress;
+        this.witchcraft=witchcraft;
+        this.transgress=transgress;
     }
 
     protected String getName() {
@@ -22,7 +22,7 @@ public class hogwarts {
     protected int getTransgress() {
         return transgress;
     }
-    public void printPowerDifference(hogwarts student){
+    public void printPowerDifference(Hogwarts student){
         if(this.getPower()>student.getPower()){
             System.out.printf("%s обладает большей мощностью магии, чем %s%n",this.getName(),student.getName());}
         else if (this.getPower()<student.getPower()){
@@ -39,8 +39,8 @@ public class hogwarts {
     public String toString() {
         return "hogwarts{" +
                 "name='" + name + '\'' +
-                ", Witchcraft=" + witchcraft +
-                ", Transgress=" + transgress +
+                ", witchcraft=" + witchcraft +
+                ", transgress=" + transgress +
                 '}';
     }
 }

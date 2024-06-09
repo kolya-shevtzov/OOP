@@ -1,16 +1,16 @@
 package model;
 
-public class pyfendye extends hogwarts {
+public class Pyfendye extends Hogwarts {
     private int diligense;
     private int loyalty;
     private int honesty;
-    public pyfendye(String name, int Witchcraft, int Transgress,int diligense,int loyalty, int honesty) {
-        super(name, Witchcraft, Transgress);
+    public Pyfendye(String name, int witchcraft, int transgress, int diligense, int loyalty, int honesty) {
+        super(name, witchcraft, transgress);
         this.diligense=diligense;
         this.loyalty=loyalty;
         this.honesty=honesty;
     }
-    public void printPowerDifference(hogwarts student){
+    public void printPowerDifference(Hogwarts student){
         if(this.getPower()>student.getPower()){
             System.out.printf("%s лудчше Пуфендуец, чем %s%n",this.getName(),student.getName());}
         else if (this.getPower()<student.getPower()){
@@ -27,8 +27,8 @@ public class pyfendye extends hogwarts {
     public String toString() {
         return "grifindor{" +
                 "name="+getName()+
-                ", Witchcragt="+getWitchcraft()+
-                ", Transgress="+getTransgress()+
+                ", witchcragt="+getWitchcraft()+
+                ", transgress="+getTransgress()+
                 ", ditigense=" + diligense +
                 ", loyalty=" + loyalty +
                 ", honesty=" + honesty +

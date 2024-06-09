@@ -1,18 +1,18 @@
 package model;
 
-public class kogtevran extends hogwarts{
+public class Kogtevran extends Hogwarts {
     private int intelligense;
     private int wisdom;
     private int wit;
     private int creativity;
-    public kogtevran(String name, int Witchcraft, int Transgress,int intelligense,int wisdom, int wit,int creativity) {
-        super(name, Witchcraft, Transgress);
+    public Kogtevran(String name, int witchcraft, int transgress, int intelligense, int wisdom, int wit, int creativity) {
+        super(name, witchcraft, transgress);
         this.intelligense=intelligense;
         this.wisdom=wisdom;
         this.wit=wit;
         this.creativity=creativity;
     }
-    public void printPowerDifference(hogwarts student){
+    public void printPowerDifference(Hogwarts student){
         if(this.getPower()>student.getPower()){
             System.out.printf("%s лудчше Когтевранец, чем %s%n",this.getName(),student.getName());}
         else if (this.getPower()<student.getPower()){
@@ -29,8 +29,8 @@ public class kogtevran extends hogwarts{
     public String toString() {
         return "grifindor{" +
                 "name="+getName()+
-                ", Witchcragt="+getWitchcraft()+
-                ", Transgress="+getTransgress()+
+                ", witchcragt="+getWitchcraft()+
+                ", transgress="+getTransgress()+
                 ", intelligense="+intelligense+
                 ", creativity=" + creativity +
                 ", wisdom=" + wisdom +

@@ -1,16 +1,16 @@
 package model;
 
-public class grifindor extends hogwarts{
+public class Grifindor extends Hogwarts {
     private int nobility;
     private int honor;
     private int bravery;
-    public grifindor(String name, int Witchcraft, int Transgress,int nobility,int honor, int bravery) {
-        super(name, Witchcraft, Transgress);
+    public Grifindor(String name, int witchcraft, int transgress, int nobility, int honor, int bravery) {
+        super(name, witchcraft, transgress);
         this.bravery=bravery;
         this.honor=honor;
         this.nobility=nobility;
     }
-    public void printPowerDifference(hogwarts student){
+    public void printPowerDifference(Hogwarts student){
         if(this.getPower()>student.getPower()){
             System.out.printf("%s лудчше Грифиндорец, чем %s%n",this.getName(),student.getName());}
         else if (this.getPower()<student.getPower()){
@@ -28,8 +28,8 @@ public class grifindor extends hogwarts{
     public String toString() {
         return "grifindor{" +
                 "name="+getName()+
-                ", Witchcragt="+getWitchcraft()+
-                ", Transgress="+getTransgress()+
+                ", witchcragt="+getWitchcraft()+
+                ", transgress="+getTransgress()+
                 ", nobility=" + nobility +
                 ", honor=" + honor +
                 ", bravery=" + bravery +
